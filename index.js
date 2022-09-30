@@ -1,4 +1,3 @@
-const { json } = require('express');
 const express = require('express')
 require('dotenv').config()
 
@@ -12,3 +11,5 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`server running at port ${port}`)
 })
+
+module.exports = app
